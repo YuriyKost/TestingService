@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navbar from "./Components/Navbar/Navbar";
+import SidePanel from "./Components/SidePanel/SidePanel";
+import ActivePanel from "./Components/ActivePanel/ActivePanel";
+import { Route, BrowserRouter } from "react-router-dom";
+import Information from "./Components/ActivePanel/ActivePanelComponents/Information";
+import Performance from "./Components/ActivePanel/ActivePanelComponents/Performance";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="AppWrapper">
+        <BrowserRouter>
+            <Navbar></Navbar>
+            <SidePanel></SidePanel>
+            <ActivePanel></ActivePanel>
+        </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
+// <Navbar></Navbar>
+// <SidePanel></SidePanel>
+// <ActivePanel>
+// </ActivePanel>
