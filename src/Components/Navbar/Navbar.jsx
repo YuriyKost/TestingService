@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom/modules/NavLink";
+import {NavLink} from "react-router-dom";
 
 
 const Navbar = () => {
@@ -8,10 +8,10 @@ const Navbar = () => {
                 <div className='Navbar-item-right'>
                     <input type="search"></input>
                     <div>
-                        <NavLink to="#">(иконка поиска)</NavLink>
+                        <a href="#">(иконка поиска)</a>
                     </div>
                     <div>
-                        <NavLink to='#' >(+)</NavLink>
+                        <a href='#' >(+)</a>
                     </div>
                     <div>
                         <NavLink to='/information'>Информация</NavLink>
