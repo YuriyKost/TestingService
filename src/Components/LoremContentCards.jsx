@@ -1,63 +1,81 @@
 import React from 'react'
-import { Button, Icon, Image, Item, Label } from 'semantic-ui-react'
+import { Button, Card, Image } from 'semantic-ui-react'
 
-const paragraph = <Image src='/images/wireframe/short-paragraph.png' />
-
-const ItemExampleDivided = () => (
-    <Item.Group divided>
-        <Item>
-            <Item.Image src='/images/wireframe/image.png' />
-
-            <Item.Content>
-                <Item.Header as='a'>12 Years a Slave</Item.Header>
-                <Item.Meta>
-                    <span className='cinema'>Union Square 14</span>
-                </Item.Meta>
-                <Item.Description>{paragraph}</Item.Description>
-                <Item.Extra>
-                    <Label>IMAX</Label>
-                    <Label icon='globe' content='Additional Languages' />
-                </Item.Extra>
-            </Item.Content>
-        </Item>
-
-        <Item>
-            <Item.Image src='/images/wireframe/image.png' />
-
-            <Item.Content>
-                <Item.Header as='a'>My Neighbor Totoro</Item.Header>
-                <Item.Meta>
-                    <span className='cinema'>IFC Cinema</span>
-                </Item.Meta>
-                <Item.Description>{paragraph}</Item.Description>
-                <Item.Extra>
-                    <Button primary floated='right'>
-                        Buy tickets
-                        <Icon name='right chevron' />
+const CardExampleGroups = () => (
+    <Card.Group>
+        <Card>
+            <Card.Content>
+                <Image
+                    floated='right'
+                    size='mini'
+                    src='https://klike.net/uploads/posts/2019-03/1551511784_4.jpg'
+                />
+                <Card.Header>Steve Sanders</Card.Header>
+                <Card.Meta>Friends of Elliot</Card.Meta>
+                <Card.Description>
+                    Steve wants to add you to the group <strong>best friends</strong>
+                </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+                <div className='ui two buttons'>
+                    <Button basic color='green'>
+                        Approve
                     </Button>
-                    <Label>Limited</Label>
-                </Item.Extra>
-            </Item.Content>
-        </Item>
-
-        <Item>
-            <Item.Image src='/images/wireframe/image.png' />
-
-            <Item.Content>
-                <Item.Header as='a'>Watchmen</Item.Header>
-                <Item.Meta>
-                    <span className='cinema'>IFC</span>
-                </Item.Meta>
-                <Item.Description>{paragraph}</Item.Description>
-                <Item.Extra>
-                    <Button primary floated='right'>
-                        Buy tickets
-                        <Icon name='right chevron' />
+                    <Button basic color='red'>
+                        Decline
                     </Button>
-                </Item.Extra>
-            </Item.Content>
-        </Item>
-    </Item.Group>
+                </div>
+            </Card.Content>
+        </Card>
+        <Card>
+            <Card.Content>
+                <Image
+                    floated='right'
+                    size='mini'
+                    src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQzOVc3dPXiDlaxTTD1eHxtt44zfYB-ssBoqA&usqp=CAU'
+                />
+                <Card.Header>Molly Thomas</Card.Header>
+                <Card.Meta>New User</Card.Meta>
+                <Card.Description>
+                    Molly wants to add you to the group <strong>musicians</strong>
+                </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+                <div className='ui two buttons'>
+                    <Button basic color='green'>
+                        Approve
+                    </Button>
+                    <Button basic color='red'>
+                        Decline
+                    </Button>
+                </div>
+            </Card.Content>
+        </Card>
+        <Card>
+            <Card.Content>
+                <Image
+                    floated='right'
+                    size='mini'
+                    src='/images/avatar/large/jenny.jpg'
+                />
+                <Card.Header>Jenny Lawrence</Card.Header>
+                <Card.Meta>New User</Card.Meta>
+                <Card.Description>
+                    Jenny requested permission to view your contact details
+                </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+                <div className='ui two buttons'>
+                    <Button basic color='green'>
+                        Approve
+                    </Button>
+                    <Button basic color='red'>
+                        Decline
+                    </Button>
+                </div>
+            </Card.Content>
+        </Card>
+    </Card.Group>
 )
 
-export default ItemExampleDivided
+export default CardExampleGroups

@@ -1,8 +1,9 @@
 import React from "react";
+import YesNoCard from "../../YesNoCard";
 
 const Tests = () => {
     return(
-        <div>Tests</div>
+        <YesNoCard />
     )
 }
 

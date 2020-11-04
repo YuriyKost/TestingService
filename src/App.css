@@ -42,3 +42,8 @@
     background-color: cadetblue;
 }
 
+.filmCards{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}

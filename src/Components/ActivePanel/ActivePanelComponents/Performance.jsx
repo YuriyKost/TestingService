@@ -1,8 +1,9 @@
 import React from "react";
+import ItemExampleDivided from "../../LoremContentFilmsItems";
 
 const Performance = () => {
     return(
-        <div>Performance</div>
+        <ItemExampleDivided></ItemExampleDivided>
     )
 }
 
